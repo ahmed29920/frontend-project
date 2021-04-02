@@ -11,7 +11,10 @@
     --l-gray: #eee;
 }
 
-
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
 a{
     text-decoration: none;
     color: var(--black);
@@ -65,6 +68,11 @@ nav .name {
 .navbar-light .navbar-nav .active-item  {
     color: var(--dark-blue);
 }
+.navbar-light .tog{
+    color: var(--light-blue);
+    border: none;
+    transition: 0.6s;
+}
 
 /*******slider******/
 .carousel {
@@ -85,8 +93,14 @@ nav .name {
     top: 30%;
     text-align: start;
     width: 50%;
-} 
-
+}
+@media (min-width: 320px) and (max-width: 1439.98px) {
+    .slider-discrip {
+        top: 18%;
+        text-align: start;
+        width: 50%;
+    }
+}
 .slider-discrip .slider-head {
     font-size: 4em;
     font-family:"Raleway";
@@ -335,8 +349,8 @@ nav .name {
     background-color: var(--white-color);
     border-radius: 10%;
     border: none;
-    padding: 20%;
-    transition: 0.5s;
+    padding: 10%;
+    transition: 0.5s;     
 }
 
 .our-Portfolio .portfolio-link button:hover , .our-Portfolio .links-container .portfolio-link .selcted-btn {
@@ -542,6 +556,19 @@ nav .name {
     height: 6vh; 
     transition: 0.5s;
 }
+@media (min-width: 320px) and (max-width: 1023.98px) {
+    .contact-us-form .send button{
+        width: 140%;
+        height: 3vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .contact-us-form .send button{
+        height: 4vh;
+    }
+}
+
 
 .contact-us-form .send button:hover{
 

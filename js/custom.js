@@ -106,30 +106,24 @@ $(function(){
 $(function(){
     $("#app-button").click(function(){
         
-        $("#app").attr("id","app-v")
-        $("#all").attr("id","all-hiden")
-        $("#card-v").attr("id","card")
-        $("#web-v").attr("id","web")
+        $("#app").css("display" , "block");
+        $("#app").siblings().css("display" , "none");
     }); 
 });
 
 $(function(){
     $("#card-button").click(function(){
         
-        $("#card").attr("id","card-v")
-        $("#all").attr("id","all-hiden")
-        $("#app-v").attr("id","app")
-        $("#web-v").attr("id","web")
+        $("#card").css("display" , "block");
+        $("#card").siblings().css("display" , "none");
     });
 });
 
 $(function(){    
     $("#web-button").click(function(){
         
-        $("#web").attr("id","web-v")
-        $("#all").attr("id","all-hiden")
-        $("#app-v").attr("id","app")
-        $("#card-v").attr("id","card")
+        $("#web").css("display" , "block");
+        $("#web").siblings().css("display" , "none");
     });    
 });
 
@@ -137,10 +131,8 @@ $(function(){
     $("#all-button").click(function(){
       
 
-        $("#all-hiden").attr("id","all")
-        $("#app-v").attr("id","app")
-        $("#card-v").attr("id","card")
-        $("#web-v").attr("id","web")
+        $("#all").css("display" , "block");
+        $("#all").siblings().css("display" , "none");
 
     });
 });
